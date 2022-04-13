@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import ProductIndex from "../views/ProductIndex.vue";
 
 const routes = [
   {
@@ -15,6 +16,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  { path: "/products", name: "product", component: ProductIndex },
 ];
 
 const router = createRouter({
