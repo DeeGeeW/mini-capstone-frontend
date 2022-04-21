@@ -91,7 +91,8 @@ export default {
         </div>
         <button v-on:click="showProduct(product)">More Info</button>
       </div>
-      <h2>{{ product.name }}</h2>
+      <br />
+      <!-- <h2>{{ product.name }}</h2> -->
       <!-- [product.images.length - 1] -->
       <!-- <img v-bind:src="product.images[product.images.length - 1].url" v-bind:alt="product.name" />
       <p>price: {{ product.price }}</p>
@@ -130,6 +131,7 @@ export default {
     </dialog>
   </div>
 </template>
+
 <style>
 .selected .card-body {
   color: orangered;

@@ -77,7 +77,7 @@ export default {
     <h1>All products</h1>
     <div v-for="product in products" v-bind:key="product.id">
       <h2>{{ product.name }}</h2>
-      <img v-bind:src="product.images[0].url" v-bind:alt="product.name" />
+      <img v-bind:src="product.images[product.images.length - 1].url" v-bind:alt="product.name" />
       <p>price: {{ product.price }}</p>
       <p>description: {{ product.description }}</p>
       <button v-on:click="showProduct(product)">More Info</button>
